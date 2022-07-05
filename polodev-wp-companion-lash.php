@@ -16,7 +16,7 @@ if ( ! defined( 'POLODEV_WP_COMPANION_LASH' ) ) {
   define( 'POLODEV_WP_COMPANION_LASH',                   ( WP_DEBUG ) ? time() : '1.0' );
 }
 
-class Polodev_Wp_Companion {
+class Polodev_Wp_Companion_Lash {
 
   public $plugin  = 'polodev-wp-companion';
   public $plugin_dir;
@@ -55,7 +55,7 @@ function polodev_wp_companion_admin_notice() {
 }
 
 if ( version_compare( PHP_VERSION, '5.6', '>=' ) ) {
-  new Polodev_Wp_Companion();
+  new Polodev_Wp_Companion_Lash();
 }
 else {
   add_action( 'admin_notices',  'polodev_wp_companion_admin_notice' );

@@ -55,7 +55,7 @@ function polodev_wp_companion_admin_notice() {
 }
 
 if ( version_compare( PHP_VERSION, '5.6', '>=' ) ) {
-  new Polodev_Wp_Companion_Lash();
+  new Polodev_Wp_Companion();
 }
 else {
   add_action( 'admin_notices',  'polodev_wp_companion_admin_notice' );

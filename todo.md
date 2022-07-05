@@ -1,0 +1,1 @@
+# adding laravel mix for scss, js and text-domain file

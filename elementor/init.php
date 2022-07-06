@@ -22,9 +22,13 @@ class ElementorInit
 	
   public function get_widget_list() {
      $widget_list = [
+      // [
+      //     'folder' => 'title',
+      //     'class' => 'Title',
+      // ],
       [
-          'folder' => 'title',
-          'class' => 'Title',
+          'folder' => 'countdown-clock',
+          'class' => 'CountdownClock',
       ],
     ];
     return $widget_list;
@@ -37,7 +41,10 @@ class ElementorInit
       if ( file_exists($file) ) {
         require $file ;
         $class_name_with_namespace = Constants::$plugin_namespace . $widget['class'];
+        // var_export($class_name_with_namespace);
         $widgets_manager->register( new $class_name_with_namespace() );
+      } else {
+        die("file doesn't exists");
       }
     }
   }

@@ -20,14 +20,17 @@ class Scripts {
   {
     $plugin_prefix = Constants::$plugin_prefix;
     wp_enqueue_script( 'bootstrap', Helpers::get_asset_file( 'js/bootstrap.bundle.min.js'  ), ['jquery'], false, true );
+    wp_enqueue_script( $plugin_prefix . '-countdown-js', Helpers::get_asset_file( 'vendor/countdown/jquery.countdown.js'  ), ['jquery'], false, true );
     wp_enqueue_script( $plugin_prefix . '-frontend', Helpers::get_asset_file( 'js/script.js'  ), ['jquery'], false, true );
   }
   public function plugin_styles()
   {
     $plugin_prefix = Constants::$plugin_prefix;
-    wp_enqueue_style( 'font-awesome-4', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-    wp_enqueue_style( 'animate', Helpers::get_asset_file( 'css/animate.css' ));
+    // wp_enqueue_style( 'font-awesome-4', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    // wp_enqueue_style( 'animate', Helpers::get_asset_file( 'css/animate.css' ));
     wp_enqueue_style( 'bootstrap', Helpers::get_asset_file( 'css/bootstrap.min.css' ));
+    wp_enqueue_style( $plugin_prefix . '-countdown-js', Helpers::get_asset_file( 'vendor/countdown/jquery.countdown.css' ));
+    // generated from scss
     wp_enqueue_style( $plugin_prefix . '-style', Helpers::get_asset_file( 'css/style.css' ));
     wp_enqueue_style( $plugin_prefix . '-custom-styles', Helpers::get_asset_file( 'css/custom-style.css' ));
   }

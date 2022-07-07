@@ -30,6 +30,10 @@ class ElementorInit
           'folder' => 'countdown-clock',
           'class' => 'CountdownClock',
       ],
+      [
+          'folder' => 'coupon-code',
+          'class' => 'CouponCode',
+      ],
     ];
     return $widget_list;
   }

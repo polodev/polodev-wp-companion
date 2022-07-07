@@ -1,7 +1,7 @@
 <?php 
 namespace ibauthor\Polodev_WP_Companion;
 ?>
-<ul class="countdown_div" data-date_to_followed="<?php echo $settings['date']; ?> 00:00:00">
+<ul class="countdown_div" data-date_to_followed="<?php echo esc_html($settings['date']); ?> 00:00:00">
     <li>
       <span class="digit_content days">
         <span class="digit_content_element">0</span>

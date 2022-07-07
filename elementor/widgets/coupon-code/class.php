@@ -3,20 +3,20 @@ namespace ibauthor\Polodev_WP_Companion;
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
-class CountdownClock extends Widget_Base
+class CouponCode extends Widget_Base
 {
   use ElementorHelperTrait;
   public function get_name()
   {
-    return 'countdown-clock';
+    return 'coupon-code';
   }
   public function get_title()
   {
-    return __('Countdown Clock', 'polodev-wp-companion');
+    return __('Coupon Code', 'polodev-wp-companion');
   }
   public function get_icon()
   {
-    return 'eicon-countdown';
+    return 'eicon-editor-code';
   }
   public function get_categories()
   {
@@ -31,13 +31,12 @@ class CountdownClock extends Widget_Base
       ]
     );
     $this->add_control(
-      'date',
+      'coupon_code',
       [
-        'label' => __('Date Time (mm/dd/yyyy)', 'polodev-wp-companion'),
+        'label' => __('Coupon Code', 'polodev-wp-companion'),
         'type' => Controls_Manager::TEXT,
         'label_block' => false,
-        'default' => '07/27/2021',
-        'placeholder' => esc_html__( 'Date format will be month/day/year ', 'polodev-wp-companion' ),
+        'default' => 'LASH50',
       ]
     );
     $this->end_controls_section();

@@ -8,15 +8,16 @@ class CouponCode extends Widget_Base
   use ElementorHelperTrait;
   public function get_name()
   {
-    return 'coupon-code';
+    return 'lash-coupon-code';
   }
   public function get_title()
   {
-    return __('Coupon Code', 'polodev-wp-companion');
+    return __('Lash Coupon Code', 'polodev-wp-companion');
   }
   public function get_icon()
   {
-    return 'eicon-editor-code';
+    // return 'eicon-editor-code';
+    return 'eicon-instagram-likes';
   }
   public function get_categories()
   {

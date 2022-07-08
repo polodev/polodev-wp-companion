@@ -1,4 +1,8 @@
-span.wp_companion_coupon_code {
+/**
+* Lash Coupon Code
+**/
+
+span.lash_coupon_code {
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -10,4 +14,35 @@ span.wp_companion_coupon_code {
   width: inherit;
 }
 
+/**
+* Lash Icon Widget1
+**/
+
+.lash_icon_widget {
+  text-align: center;
+}
+.lash_icon_widget .lash_icon_widget_icon {
+  width:  60px;
+  height:  60px;
+  border-radius: 50%;
+  background-color:  #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.lash_icon_widget .lash_icon_widget_icon i{
+  color:  #b8a268;
+  font-size: 30px;
+}
+.lash_icon_widget .lash_icon_widget_title {
+  margin-top:  25px;
+  font-size:  25px;
+  font-weight: normal;
+}
+.lash_icon_widget .lash_icon_widget_subtitle {
+  font-size:  14px;
+  margin-top:  5px;
+  color:  #666;
+}
 

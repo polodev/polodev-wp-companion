@@ -34,6 +34,10 @@ class ElementorInit
           'folder' => 'coupon-code',
           'class' => 'CouponCode',
       ],
+      [
+          'folder' => 'icon-widget',
+          'class' => 'IconWidget',
+      ],
     ];
     return $widget_list;
   }

@@ -8,15 +8,16 @@ class CountdownClock extends Widget_Base
   use ElementorHelperTrait;
   public function get_name()
   {
-    return 'countdown-clock';
+    return 'lash-countdown-clock';
   }
   public function get_title()
   {
-    return __('Countdown Clock', 'polodev-wp-companion');
+    return __('Lash Countdown Clock', 'polodev-wp-companion');
   }
   public function get_icon()
   {
-    return 'eicon-countdown';
+    // return 'eicon-countdown';
+    return 'eicon-instagram-likes';
   }
   public function get_categories()
   {

@@ -28,6 +28,7 @@ class Scripts {
     $plugin_prefix = Constants::$plugin_prefix;
     // wp_enqueue_style( 'font-awesome-4', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
     // wp_enqueue_style( 'animate', Helpers::get_asset_file( 'css/animate.css' ));
+    wp_enqueue_style( 'font-awesome-5', 'https://use.fontawesome.com/releases/v5.15.4/css/all.css');
     wp_enqueue_style( 'bootstrap', Helpers::get_asset_file( 'css/bootstrap.min.css' ));
     wp_enqueue_style( $plugin_prefix . '-countdown-js', Helpers::get_asset_file( 'vendor/countdown/jquery.countdown.css' ));
     // generated from scss

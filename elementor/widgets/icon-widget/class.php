@@ -39,36 +39,6 @@ class IconWidget extends Widget_Base
           'value' => 'fas fa-circle',
           'library' => 'fa-solid',
         ],
-        'recommended' => [
-          'fa-solid' => [
-            'circle',
-            'dot-circle',
-            'square-full',
-          ],
-          'fa-regular' => [
-            'circle',
-            'dot-circle',
-            'square-full',
-          ],
-        ],
-      ]
-    );
-    $this->add_control(
-      'title',
-      [
-        'label' => esc_html__( 'Title', 'polodev-wp-companion' ),
-        'type' => \Elementor\Controls_Manager::TEXT,
-        'default' => esc_html__( 'Subtitle', 'polodev-wp-companion' ),
-        'placeholder' => esc_html__( 'Type your title here', 'polodev-wp-companion' ),
-      ]
-    );
-    $this->add_control(
-      'subtitle',
-      [
-        'label' => esc_html__( 'Title', 'polodev-wp-companion' ),
-        'type' => \Elementor\Controls_Manager::TEXT,
-        'default' => esc_html__( 'Title', 'polodev-wp-companion' ),
-        'placeholder' => esc_html__( 'Type your title here', 'polodev-wp-companion' ),
       ]
     );
     $this->end_controls_section();
